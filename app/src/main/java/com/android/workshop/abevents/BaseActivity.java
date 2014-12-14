@@ -47,7 +47,7 @@ public class BaseActivity extends ActionBarActivity {
             if(savedInstanceState.getBoolean("display")) {    // check if the events are displayed
                 isDisplayed = true;
 
-                String mTextSavedMsg = savedInstanceState.getString("message");    // get the message displayed
+                String mTextSavedMsg = savedInstanceState.getString("text");    // get the message displayed
                 if(mTextSavedMsg.length() != 0) {
 
                     // create a separate thread to let the time to UI to be displayed
@@ -218,7 +218,7 @@ public class BaseActivity extends ActionBarActivity {
     public void onSaveInstanceState(Bundle savedState) {
         super.onSaveInstanceState(savedState);
         if(isDisplayed) {
-            savedState.putString("message", checkText.getText().toString());
+            savedState.putString("text", checkText.getText().toString());
             savedState.putBoolean("display", isDisplayed);
             savedState.putBoolean("fail", isFailed);
             savedState.putBoolean("progress", isChecking);
