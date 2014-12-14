@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ABevents</string>
+    <string name="name_hint">Tape your name..</string>
+    <string name="check_hint">Verification, please wait..</string>
+    <string name="action_done">Done</string>
+</resources>
